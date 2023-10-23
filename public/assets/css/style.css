@@ -1,0 +1,322 @@
+body{
+	margin:0px;
+	padding:0px;
+	font-family:arial;	
+}
+
+table{
+	border-collapse:collapse;	
+}
+
+a{
+	text-decoration:none;
+}
+
+.maincontainer1{
+	width:1000px;
+	height: 70px;
+	margin:auto;
+}
+
+.logout-btn{
+	float:right;
+}
+
+.maincontainer2{
+	width:100%;
+	height: 30px;
+	margin: auto;
+	color: white;
+	background: rgba(28, 88,120,255);
+}
+
+.insidecontainer{
+	width:1000px;
+	height: 30px;
+	margin: auto;
+}
+
+.insidecontainer h5{
+	padding-top:8px;
+}
+
+
+.content{
+	width:1000px;
+	height: 600px;
+	margin: auto;
+	
+}
+
+.content1{
+	width:200px;
+	height:500px;
+	float:left;
+	
+}
+
+
+/* login page css start here */
+
+.table-content{
+	width:385px;
+	margin:auto;
+	margin-top:100px;
+	position: relative;
+	
+}
+
+/* laravel css for error handling*/
+.error-danger{
+	position: absolute;
+	top: -50px;
+	color: red;
+	padding: 10px;
+	width: 500px;
+	border: 1px solid brown;
+	background-color: rgb(255, 152, 152);
+	border-radius: 2px;
+}
+
+.success-message{
+	position: absolute;
+	top: -50px;
+	color: red;
+	padding: 10px;
+	width: 500px;
+	border: 1px solid brown;
+	background-color: rgb(255, 152, 152);
+	border-radius: 2px;
+}
+/* laravel css */
+
+.logintable{
+	font-size:15px;
+	border: 1px solid black;
+}
+
+.logintable tr td{
+	height:10px;
+	padding-left:10px;
+	
+}
+
+/* Page Manager Work css start here */
+
+#blue{
+	color:rgba(28, 88,120,255);
+	font-weight:bold;
+}
+
+#blue1{
+	color:rgba(28, 88,120,255);
+}
+
+.loginline p{
+	font-size:12px;
+	margin:0px;
+	color:grey;
+}
+
+
+.content2 h4{
+	color:rgba(28, 88,120,255);
+	border-bottom:solid 1px #CCC;
+	width:300px;
+	padding-bottom:2px;
+}
+
+.add-container{
+	width:100%;
+	border-collapse:collapse;
+	border:1px solid black;
+	border:bold;
+}
+
+.add-line{
+	background-color:#EEE;
+	border-bottom:1px solid ;
+	padding:5px 5px;
+	font-size:12px;
+}
+
+.parent-table{
+	width:780px;
+	margin:auto; 
+	border:1px solid black;
+	margin-top:10px;	
+	font-size:12px;
+}
+
+.parent-table tr{
+	border-bottom:1px solid black;
+}
+
+.box{
+	 height:300px;
+	 width:600px;
+}
+
+.length{
+	width:177px;
+}
+
+.txt{
+	width:30px;
+}
+
+.rightalign{
+	text-align:right;
+	width:150px;
+}
+
+ 
+.sv-btn{
+	margin-left:150px;
+	margin-top:5px ;
+	margin-bottom:5px;
+	padding:5px 20px;
+	font-size:12px;
+	background:rgba(28, 88,120,255);
+	color:white;
+}
+
+.cl-btn{
+	
+	margin-top:5px ;
+	margin-bottom:5px;
+	padding:5px 20px;
+	font-size:12px;
+	background:rgba(28, 88,120,255);
+	color:white;
+}
+
+
+
+/* Page manager Work Css end here */
+
+
+
+.content2{
+	width:800px;
+	height:600px;
+	float:left;
+}
+
+.pm{
+	border-bottom:dotted 1px #CCC;
+	width:300px;
+	padding-bottom:2px;
+}
+
+.thisline{
+	font-size:13px;
+}
+
+.clickline{
+	text-align:center;
+	font-family:arial;
+	font-size:13px;
+	border:solid 1px #CCC;
+}
+
+.searchtable{
+	font-family:arial;
+	font-size:13px;
+	border:solid 1px #CCC;
+	width:100%;
+}
+
+.searchtable td{
+	padding:3px;
+}
+
+.searchtable tr{
+	border-bottom:solid 1px #CCC;
+}
+
+.searchtable tr:nth-child(1){
+	background-color:#EEE;
+	font-weight:bold;
+}
+
+
+.id-table input[type="text"]{
+	margin-right:160px;
+}
+
+#sr-btn
+{
+	color:white;
+	background:rgba(28, 88,120,255);
+}
+
+.pageline{
+	font-size:13px;
+}
+
+.id-table{
+	text-align:center;
+	font-size:13px;
+	width:100%;
+	border:solid 1px #CCC;
+}
+
+.id-table td,.id-table th{
+	border:solid 1px #CCC;	
+	padding:4px;
+}
+
+#lft{
+	text-align:left;
+}
+
+#ryt{
+	margin-left:600px;
+	font-size:11px;
+}
+
+.leftlist{
+	list-style:none;
+	margin:0;
+	padding:0;
+	font-family:arial;
+	font-size:13px;
+	border:solid 1px #CCC;
+	border-top:none;
+	width:180px;
+}
+
+.leftlist a{
+	color:black;
+}
+
+.leftlist li:nth-child(1)
+{
+	padding-top:30px;
+}
+
+.leftlist li{
+	padding:10px;
+	border-bottom:solid 1px #CCC;
+}
+
+/* .leftlist a:hover{
+	font-size:5px;
+} */
+
+.leftlist li:nth-child(odd){
+	font-weight:bold;
+}
+
+.leftlist li:nth-child(even){
+	border-bottom:solid 2px #CCC;
+}
+
+
+.footer{
+	width:100%;
+	height: 30px;
+	margin: auto;
+	background: rgba(28,88,120,255);
+}
