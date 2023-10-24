@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 23, 2023 at 01:13 PM
--- Server version: 10.4.28-MariaDB
+-- Generation Time: Oct 24, 2023 at 01:09 PM
+-- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -250,7 +250,7 @@ CREATE TABLE `signups` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `fullname` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `password` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL DEFAULT '123',
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -270,7 +270,9 @@ INSERT INTO `signups` (`id`, `fullname`, `email`, `password`, `created_at`, `upd
 (8, 'Richa', 'r@gmail.com', '$2y$10$7tP45l1mg3KtU5HFU07K4ennCYogPePUgbvZiD3vOtc9yFEObVMya', NULL, NULL),
 (9, 'Ankita', 'ankita@gmail.com', '$2y$10$GUasNGaI0e4I5xaFXYLPk.kiEGDYBJxQdTFSJiRjpSiJyXbEf0ipy', NULL, NULL),
 (10, 'Nayan', 'nayan@gmail.com', '$2y$10$tEdnxO8Gfuz9hLSUoi6LSOeCFNKsn7nbUjuqgGKBKOIwz6cIz6v2S', NULL, NULL),
-(11, 'dushyant', 'dushyant@ok.com', '$2y$10$1TxtnB5XLyCAOQ45bSDxSO1DTaon/PE4CoblImZRIsgU9QaNuH4TK', NULL, NULL);
+(11, 'dushyant', 'dushyant@ok.com', '$2y$10$1TxtnB5XLyCAOQ45bSDxSO1DTaon/PE4CoblImZRIsgU9QaNuH4TK', NULL, NULL),
+(12, 'Dushyant', 'dknov2000@gmail.com', '123', NULL, NULL),
+(13, 'Bhaumik Kashyap', 'bhaumikkashyap2@gmail.com', '123', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -422,7 +424,7 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT for table `signups`
 --
 ALTER TABLE `signups`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `users`

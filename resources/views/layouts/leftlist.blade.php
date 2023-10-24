@@ -1,6 +1,7 @@
 
-<!--  content1 start here -->
+<!--content1 start here-->
 <div class="content1" >
+	<!--leftlist starts here-->
 	<ul class="leftlist">
 		<li><a href="{{route('page.summary')}}">Page Summary</a></li>
 		<li><a href="{{route('add.page')}}">Add Page</a></li>
@@ -15,5 +16,6 @@
 		<p>Email:example@domain.com</p>
 		</li>
 	</ul>
+	<!--leftlist ends here-->
 </div>
-<!--  content1 end here  -->
+<!--content1 end here-->

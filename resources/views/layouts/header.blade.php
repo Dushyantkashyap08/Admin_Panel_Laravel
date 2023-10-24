@@ -25,8 +25,7 @@
 	</style>
 </head>
 <body>
-
-    <!-- maincontainer1 Start Here --> 
+    <!--maincontainer1 Start Here--> 
 		<div class="maincontainer1"> 
 		
 			<!-- admin Logo -->
@@ -39,18 +38,18 @@
 				<input type="button" class="logout-btn" value="Logout" />
 			</a>
 			@endif	
-			<!-- Logout button ends here -->
+			<!--Logout button ends here-->
 		</div>
-<!-- mainontainer1 End Here --> 
+<!--mainontainer1 End Here--> 
 
-<!-- miancontainer2 start here  -->
+<!--miancontainer2 start here-->
 		<div class="maincontainer2">
 		
-			<!-- insideconatiner  -->
+			<!-- insideconatiner-->
 			<div class="insidecontainer"> 
 				<h5><?php echo date('d-m-y') ?></h5>
 			</div>
-			<!-- insidecontainer end  -->
+			<!-- insidecontainer end-->
 			
 		</div>
-<!-- maincontainer2 end  here  -->
+<!--maincontainer2 end  here-->
