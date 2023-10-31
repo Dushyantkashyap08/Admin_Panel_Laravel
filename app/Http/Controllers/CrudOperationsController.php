@@ -11,7 +11,7 @@ use App\Models\Addcategory;
 use App\Models\Addproduct;
 use Illuminate\Http\Request;
 
-class CrudController extends Controller
+class CrudOperationsController extends Controller
 {
     public function add_page_data(Request $request){
 
@@ -40,7 +40,7 @@ class CrudController extends Controller
 
     public function edit_display( $id){
         $findrow = Addpage::where('id',$id)->get();
-        return view('addpage', compact('findrow'));
+        return view('add-page', compact('findrow'));
     }
 
     public function edit_data(Request $request ,$id=''){
@@ -61,7 +61,7 @@ class CrudController extends Controller
             $name = $request->get('sname');
             $data = Addpage::where('name', 'LIKE',  '%'. $name .'%')->paginate(2);
         }
-        return view('pagesummary', compact('data'));
+        return view('page-summary', compact('data'));
 
     }
 
@@ -91,7 +91,7 @@ class CrudController extends Controller
 
     public function category_edit_display($id){
         $findrow = Addcategory::where('id',$id)->get();
-        return view('addcategory', compact('findrow'));
+        return view('add-category', compact('findrow'));
     }
 
     public function category_edit_data(Request $request ,$id=''){
@@ -110,7 +110,7 @@ class CrudController extends Controller
             $name = $request->get('sname');
             $data = Addcategory::where('categoryname', 'LIKE',  '%'. $name .'%')->paginate(2);
         }
-        return view('categorysummary', compact('data'));
+        return view('category-summary', compact('data'));
 
     }
 
@@ -153,7 +153,7 @@ class CrudController extends Controller
 
     public function product_edit_display($id){
         $findrow  = Addproduct::where('id',$id)->get();
-        return view('addproduct', compact('findrow'));
+        return view('add-product', compact('findrow'));
     }
 
     public function product_edit_data(Request $request, $id=''){
@@ -174,12 +174,8 @@ class CrudController extends Controller
             $name = $request->get('sname');
             $products = Addproduct::where('pname', 'LIKE', '%'. $name . '%')->paginate(2);
         }
-        return view('productsummary', compact('products'));
-        // echo "hello";
+        return view('product-summary', compact('products'));
     }
-
-
-
 
     // *********** change password here **************
 
@@ -190,10 +186,6 @@ class CrudController extends Controller
             $oldpw = $request->get('oldpass');
             $newpw = $request->get('newpass');
             $cnewp = $request->get('cnewpass');
-            // $data = Login::where('password',$oldpw)->first();
-            // $data->password = $newpw;
-            // $data->save();
-            // echo $data;
             if($newpw == $cnewp){
                 $data = Login::where('password',$oldpw)->first();
                 if(isset($data))

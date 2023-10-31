@@ -5,7 +5,7 @@
 <!--content starts here-->
 <div class="content">
     <!--yield section starts here-->
-    @yield('login-form')
+    @yield('home-section')
     @yield('page-summary-section')
     @yield('add-page-section')
     @yield('category-summary-section')

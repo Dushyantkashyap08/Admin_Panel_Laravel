@@ -27,7 +27,7 @@ class LoginController extends Controller
             Auth::login($user);
             return redirect()->intended('add-page');
         }
-        return redirect("login-form")->with('error', 'Oops! You have entered invalid credentials');
+        return redirect("/home")->with('error', 'Oops! You have entered invalid credentials');
     }
 
   
@@ -35,7 +35,7 @@ class LoginController extends Controller
         Session::flush();
         Auth::logout();
   
-        return Redirect('/login-form');
+        return Redirect('/home');
     }
 
 }

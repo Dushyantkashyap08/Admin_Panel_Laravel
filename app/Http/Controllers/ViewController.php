@@ -15,61 +15,61 @@ use function Ramsey\Uuid\v1;
 
 class ViewController extends Controller
 {
-    public function login_form(){
+    public function home(){
             return view('home');
     }
 
     public function page_summary(){
         if(Auth::check()){
             $data = Addpage::paginate(4);
-            return view('pagesummary', compact('data'));
+            return view('page-summary', compact('data'));
         }
-        return redirect("/login-form")->with('error','Opps! You do not have access');
+        return redirect("/home")->with('error','Opps! You do not have access');
     }
     
     public function add_page(){
         if(Auth::check()){
-            return view('addpage');
+            return view('add-page');
         }
-        return redirect("/login-form")->with('error','Opps! You do not have access');
+        return redirect("/home")->with('error','Opps! You do not have access');
     }
 
     public function category_summary(){
         if(Auth::check()){
             $data = Addcategory::paginate(4);
-            return view('categorysummary', compact('data'));
+            return view('category-summary', compact('data'));
         }
-        return redirect("/login-form")->with('error','Opps! You do not have access');
+        return redirect("/home")->with('error','Opps! You do not have access');
     }
 
     public function add_category(){
         if(Auth::check()){
-            return view('addcategory');
+            return view('add-category');
         }
-        return redirect("/login-form")->with('error','Opps! You do not have access');
+        return redirect("/home")->with('error','Opps! You do not have access');
     }
 
     public function product_summary(){
         if(Auth::check()){
             $products=Addproduct::with('category')->paginate(2);
-            return view('productsummary',compact('products'));
+            return view('product-summary',compact('products'));
         }
-        return redirect("/login-form")->with('error','Opps! You do not have access');
+        return redirect("/home")->with('error','Opps! You do not have access');
     }
 
     public function add_product(){
         if(Auth::check()){
             $data = Addcategory::all();
-            return view('addproduct', compact('data'));
+            return view('add-product', compact('data'));
         }
-        return redirect("/login-form")->with('error','Opps! You do not have access');
+        return redirect("/home")->with('error','Opps! You do not have access');
     }
     
     public function password(){
         if(Auth::check()){
-            return view('changepassword');
+            return view('change-password');
         }
-        return redirect("/login-form")->with('error','Opps! You do not have access');
+        return redirect("/home")->with('error','Opps! You do not have access');
     }
 
 }

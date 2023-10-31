@@ -2,7 +2,7 @@
 @extends('layouts.main')
 
 <!--home-section starts here-->
-@section('login-form')
+@section('home-section')
     <!-- table-content start here  -->
     <div class="table-content" >
         @if(session('error'))
@@ -27,9 +27,6 @@
                         @error('username')
                         {{$message}}
                         @enderror
-                        {{-- @if ($errors->has('username'))
-                        <div>{{ $errors->first('username') }}</div>
-                        @endif --}}
                     </td>
                 </tr>
                 
